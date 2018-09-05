@@ -9,3 +9,7 @@
 
 # 3、怼网络
 [S-NN: Stacked Neural Networks](https://arxiv.org/pdf/1605.08512.pdf)
+
+
+# 4、其余trick
+构建[高分辨率model](https://arxiv.org/ftp/arxiv/papers/1312/1312.5402.pdf)
