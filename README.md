@@ -5,7 +5,7 @@
 ### 数据增强
 [Here](https://medium.com/ymedialabs-innovation/data-augmentation-techniques-in-cnn-using-tensorflow-371ae43d5be9) <br>
 
-数据增强库[Augmentor](https://augmentor.readthedocs.io/en/master/index.html)和imgaug(https://imgaug.readthedocs.io/en/latest/index.html) , [介绍](https://www.cnblogs.com/vincentcheng/p/9186540.html)
+数据增强库[Augmentor](https://augmentor.readthedocs.io/en/master/index.html)和[imgaug](https://imgaug.readthedocs.io/en/latest/index.html) , [介绍](https://www.cnblogs.com/vincentcheng/p/9186540.html)
 
 # 2、优化器
 [关于优化器的介绍](https://www.jianshu.com/p/e6e8aa3169ca)
