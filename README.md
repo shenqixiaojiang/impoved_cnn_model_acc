@@ -20,7 +20,9 @@ sgd 以及 Momentum 更加适合小样本数据集的最优化。
 # 4、其余trick
 构建[高分辨率model](https://arxiv.org/ftp/arxiv/papers/1312/1312.5402.pdf)
 
-# Label数据不均衡
+# 5 Label数据不均衡
 
-解决：
-* 对损失函数加惩罚项。
+方式：
+* 对损失函数加惩罚项，weights平衡。
+* label多的数据欠采样，label少的过采样。
+* 采用F1等指标均衡准确和召回。
