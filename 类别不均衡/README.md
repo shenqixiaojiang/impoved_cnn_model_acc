@@ -1,0 +1,4 @@
+## 1、相关文章
+* [Here1](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650718717&idx=1&sn=85038d7c906c135120a8e1a2f7e565ad&scene=0#wechat_redirect)
+* [Here2](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650724464&idx=1&sn=1f34358862bacfb4c7ea17c864d8c44d&chksm=871b1c0eb06c95180e717d8316b0380602f638a764530b4b9e35ac812c7c33799d3357d46f00&scene=0&key=0f5e635eeb6bf20a076ad60d7f11c6ef5c5c1c8f02873bc8b458381b629a1e2ae76174d0d4ba34331c71d095e3b3b92aa7fff5e1e11badeaf6c87ff90fd264f3dc6b1eb074eaccb2ac46e8f2d440cefd&ascene=0&uin=MTU1NTY3MTA0Mg%3D%3D&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.6+build(15G1217)&version=12010310&nettype=WIFI&fontScale=100&pass_ticket=csWk%2BJXfpl7rA8r527fLqF%2BF3EZEeBKpFRjI%2BWMXoPf2PEtPt%2FLMrscLX4GBl7gg)
+* [SMOTE过采样](https://www.cnblogs.com/Determined22/p/5772538.html)
