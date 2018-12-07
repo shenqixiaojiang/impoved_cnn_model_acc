@@ -31,14 +31,15 @@ def read_data():
 
     label5 = np.where(label == 5)[0]
     label8 = np.where(label == 8)[0]
-    data5 = label_training[list(label5)]
-    data8 = label_training[list(label8)]
+    data5 = s2_training[list(label5)]
+    data8 = s2_training[list(label8)]
     data1 = data5.reshape((data5.shape[0], -1))
     data2 = data8.reshape((data8.shape[0], -1))
 
     return data1,data2
 
 data1,data2 = read_data()
+print data1.shape,data2.shape
 
 ###########cal similarity with multiprocessing###########
 def fun_map(inTuple):
@@ -57,17 +58,17 @@ def fun_map(inTuple):
 
 def fun_map2(inTuple):
     pfea,pid = inTuple[0], inTuple[1]
-    fout = open('tmp_dir/' + str(os.getpid()), 'a')
-    for jj in range(0,len(data2)):
+    with open('tmp_dir/' + str(os.getpid()), 'a') as fout:
+      for jj in range(0,len(data2)):
         sim = cosin(pfea,data2[jj])
-        if sim > 0.8:
+        if sim > 0.95:
             sim_str = '%.4f' % sim
             fout.write(str(pid) + " " + str(jj) + " " + sim_str + "\n")
 
 if os.path.exists('tmp_dir/') == False:
     os.mkdir('tmp_dir/')
 
-processNum = 20
+processNum = 30
 from multiprocessing import Pool
 pool = Pool(processes=processNum)
 mapList = []
@@ -76,3 +77,10 @@ for ii in range(0,len(data1)):
     mapList.append((pfea,ii))
 pool.map(fun_map2, mapList)
 
+#####union the result
+with open('final_result.txt','w') as fout:
+  for ii in os.listdir('tmp_dir/'):
+    with open('tmp_dir/' + ii) as fdin:
+      for jj in fdin:
+        fout.write(jj)
+    os.remove('tmp_dir/' + ii)
